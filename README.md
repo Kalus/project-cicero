@@ -20,7 +20,10 @@ This ultra-minimal CSS might look like theme tartare but that means less stuff t
 Getting Started
 ---------------
 
-Install the dependencies with `npm install`. You can build SCSS changes with `npm run scss`.
+**For Local Development**
+1. Setup a local wordpress install using MAMP or similar. Your local Wordpress config isn't opinionated.
+2. Clone this repo into your themes folder.
+3. Install the dependencies with `npm install`. You can build SCSS changes with `npm run scss`.
 
 Other Available Commands
 ------------------------
