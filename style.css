@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
+# Layouts
 # Typography
 # Elements
 # Forms
@@ -253,6 +254,30 @@ table {
 td,
 th {
 	padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+.content-area {
+	float: left;
+	margin: 0 -25% 0 0;
+	width: 100%;
+}
+
+.site-main {
+	margin: 0 25% 0 0;
+}
+
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 25%;
+}
+
+.site-footer {
+	clear: both;
+	width: 100%;
 }
 
 /*--------------------------------------------------------------
