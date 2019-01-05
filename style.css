@@ -1,0 +1,111 @@
+/*
+ Theme Name:   Project Cicero
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Nineteen Child Theme, customized for Project Cicero
+ Author:       Lukas Fauset
+ Author URI:   http://lukasfauset.com
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+ Text Domain:  twenty-nineteen-child
+*/
+
+/* Blocks */
+/* !Block styles */
+
+.wp-block-columns.pull-up {
+    top: -6rem;
+    margin-bottom: -6rem;
+}
+.entry .entry-content > .pull-up {
+    margin-bottom: -6rem;
+}
+.wp-block-column {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 2rem;
+}
+
+.entry .entry-content > * > *:last-child, .entry .entry-summary > * > *:last-child {
+    margin-bottom: 1rem;
+}
+
+/* Content */
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+    .site-header {
+        padding-bottom: 1rem;
+    }
+}
+  
+/* Site Logo */
+  
+@media only screen and (min-width: 768px) {
+    .site-logo {
+        
+    }
+}
+
+.site-logo .custom-logo-link {
+    border-radius: 0;
+    width: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+    .site-branding {
+      margin: 0 calc(10% + 150px);
+    }
+  }
+
+.site-logo .custom-logo-link img {
+    height: 100%;
+}
+
+.site-logo .custom-logo-link .custom-logo {
+}
+
+.site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus {
+box-shadow: 0 0 0 0px black;
+}
+
+@media only screen and (min-width: 768px) {
+    .site-logo .custom-logo-link {
+    }
+}
+
+/* Site Title */
+.site-title {
+    display: none;
+}
+.site-title:not(:empty) + .site-description:not(:empty):before {
+    display: none;
+}
+
+/* Entry Title */
+.entry-header {
+    display: none;
+}
+
+/* Blocks */
+/* !Block styles */
+
+@media only screen and (min-width: 768px) {
+    .entry .entry-content > *,
+    .entry .entry-summary > * {
+        max-width: calc(6 * (100vw / 12) - 28px);
+    }
+    /* Sidebar */
+    #secondary {
+        width: 20%;
+        right: 10%;
+        position: absolute;
+        top: 43rem;
+    }
+}
+
