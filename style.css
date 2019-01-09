@@ -1,0 +1,149 @@
+/*
+ Theme Name:   Project Cicero
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Nineteen Child Theme, customized for Project Cicero
+ Author:       Lukas Fauset
+ Author URI:   http://lukasfauset.com
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+ Text Domain:  twenty-nineteen-child
+*/
+
+/* Body */
+body {
+    line-height: 1.5;
+}
+
+/* Blocks */
+/* !Block styles */
+@media only screen and (min-width: 600px) {
+    .wp-block-columns.pull-up {
+        top: -6rem;
+        margin-bottom: -6rem;
+    }
+    .entry .entry-content > .pull-up {
+        margin-bottom: -6rem;
+    }
+}
+.wp-block-column {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 2rem;
+}
+
+.entry .entry-content > * > *:last-child, .entry .entry-summary > * > *:last-child {
+    margin-bottom: 1rem;
+}
+
+/* Content */
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+    .site-header {
+        padding-top: 2rem;
+        padding-bottom: .5rem;
+    }
+}
+  
+/* Site Logo */
+  
+@media only screen and (min-width: 768px) {
+    .site-logo {
+        
+    }
+}
+
+.site-logo .custom-logo-link {
+    border-radius: 0;
+    width: 250px;
+}
+
+@media only screen and (min-width: 768px) {
+    .site-branding {
+      margin: 0 calc(10% + 250px);
+    }
+    .site-logo {
+        top: -10px;
+    }
+  }
+
+.site-logo .custom-logo-link {
+    overflow: visible;
+    height: auto;
+}
+
+.site-logo .custom-logo-link img {
+    height: auto;
+}
+
+.site-logo .custom-logo-link .custom-logo {
+}
+
+.site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus {
+box-shadow: 0 0 0 0px black;
+}
+
+@media only screen and (min-width: 768px) {
+    .site-logo .custom-logo-link {
+    }
+}
+
+/* Site Title */
+.site-title {
+    display: none;
+}
+.site-title:not(:empty) + .site-description:not(:empty):before {
+    display: none;
+}
+
+/* Navigation */
+.main-navigation .main-menu > li > a {
+    margin-right: 1rem;
+}
+
+/* Entry Title */
+.entry-header {
+    display: none;
+}
+
+/* Blocks */
+/* !Block styles */
+
+@media only screen and (min-width: 768px) {
+    .entry .entry-content > *,
+    .entry .entry-summary > * {
+        max-width: calc(6 * (100vw / 12) - 28px);
+    }
+}
+
+/* Widgets */
+.widget_archive ul li, .widget_categories ul li, .widget_meta ul li, .widget_nav_menu ul li, .widget_pages ul li, .widget_recent_comments ul li, .widget_recent_entries ul li, .widget_rss ul li {
+    line-height: 1;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+/* Secondary Sidebar */
+#secondary {
+    margin: 0 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    #secondary {
+        width: 20%;
+        right: 10%;
+        position: absolute;
+        top: 7rem;
+    }
+    /* Sidebar Position on Homepage */
+
+    .home #secondary {
+        top: 43rem;
+    }
+}
