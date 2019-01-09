@@ -12,15 +12,21 @@
  Text Domain:  twenty-nineteen-child
 */
 
+/* Body */
+body {
+    line-height: 1.5;
+}
+
 /* Blocks */
 /* !Block styles */
-
-.wp-block-columns.pull-up {
-    top: -6rem;
-    margin-bottom: -6rem;
-}
-.entry .entry-content > .pull-up {
-    margin-bottom: -6rem;
+@media only screen and (min-width: 600px) {
+    .wp-block-columns.pull-up {
+        top: -6rem;
+        margin-bottom: -6rem;
+    }
+    .entry .entry-content > .pull-up {
+        margin-bottom: -6rem;
+    }
 }
 .wp-block-column {
     background: white;
@@ -40,7 +46,8 @@
 
 @media only screen and (min-width: 768px) {
     .site-header {
-        padding-bottom: 1rem;
+        padding-top: 2rem;
+        padding-bottom: .5rem;
     }
 }
   
@@ -54,17 +61,25 @@
 
 .site-logo .custom-logo-link {
     border-radius: 0;
-    width: 150px;
+    width: 250px;
 }
 
 @media only screen and (min-width: 768px) {
     .site-branding {
-      margin: 0 calc(10% + 150px);
+      margin: 0 calc(10% + 250px);
+    }
+    .site-logo {
+        top: -10px;
     }
   }
 
+.site-logo .custom-logo-link {
+    overflow: visible;
+    height: auto;
+}
+
 .site-logo .custom-logo-link img {
-    height: 100%;
+    height: auto;
 }
 
 .site-logo .custom-logo-link .custom-logo {
@@ -87,6 +102,11 @@ box-shadow: 0 0 0 0px black;
     display: none;
 }
 
+/* Navigation */
+.main-navigation .main-menu > li > a {
+    margin-right: 1rem;
+}
+
 /* Entry Title */
 .entry-header {
     display: none;
@@ -100,12 +120,30 @@ box-shadow: 0 0 0 0px black;
     .entry .entry-summary > * {
         max-width: calc(6 * (100vw / 12) - 28px);
     }
-    /* Sidebar */
+}
+
+/* Widgets */
+.widget_archive ul li, .widget_categories ul li, .widget_meta ul li, .widget_nav_menu ul li, .widget_pages ul li, .widget_recent_comments ul li, .widget_recent_entries ul li, .widget_rss ul li {
+    line-height: 1;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+/* Secondary Sidebar */
+#secondary {
+    margin: 0 1rem;
+}
+
+@media only screen and (min-width: 768px) {
     #secondary {
         width: 20%;
         right: 10%;
         position: absolute;
+        top: 7rem;
+    }
+    /* Sidebar Position on Homepage */
+
+    .home #secondary {
         top: 43rem;
     }
 }
-
