@@ -6,7 +6,7 @@ function projectcicero_enqueue_styles() {
 }
 
 // Remove title tag 
-add_action( 'init', 'projectcicero_remove_title_tag', 15 );
+// add_action( 'init', 'projectcicero_remove_title_tag', 15 );
 function projectcicero_remove_title_tag() { 
     remove_post_type_support( 'page', 'title' ); 
 } 
